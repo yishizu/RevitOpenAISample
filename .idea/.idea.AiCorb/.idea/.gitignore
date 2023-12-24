@@ -11,3 +11,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+# packages
+/packages/
+# user-specific files
+/*.suo
+/*.user
+/*.userosscache
