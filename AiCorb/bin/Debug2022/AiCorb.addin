@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>AiCorb Tools Application</Name>
+    <Assembly>GEL\AiCorb.dll</Assembly>
+    <AddInId>71F7CB5D-8E97-4E26-AE19-307F26A0F1F4</AddInId>
+    <FullClassName>AiCorb.App</FullClassName>
+    <VendorId>GEL</VendorId>
+    <VendorDescription>https://geometryengineeringlab.tech/</VendorDescription>
+  </AddIn>
+</RevitAddIns>

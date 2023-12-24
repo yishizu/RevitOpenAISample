@@ -1,0 +1,12 @@
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\AiCorb.dll.config
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\AiCorb.dll
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\MaterialDesignThemes.Wpf.dll
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\Newtonsoft.Json.dll
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\MaterialDesignThemes.Wpf.pdb
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\MaterialDesignThemes.Wpf.xml
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\Newtonsoft.Json.xml
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug2022\AiCorb.csproj.AssemblyReference.cache
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug2022\AiCorb.csproj.CoreCompileInputs.cache
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug2022\AiCorb.csproj.CopyComplete
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug2022\AiCorb.dll
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\AiCorb.addin
