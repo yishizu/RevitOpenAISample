@@ -13,7 +13,7 @@
         <FileAlignment>512</FileAlignment>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
+        <PlatformTarget>x64</PlatformTarget>
         <DebugSymbols>true</DebugSymbols>
         <DebugType>full</DebugType>
         <Optimize>false</Optimize>
@@ -23,7 +23,7 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
+        <PlatformTarget>x64</PlatformTarget>
         <DebugType>pdbonly</DebugType>
         <Optimize>true</Optimize>
         <OutputPath>bin\Release\</OutputPath>
@@ -34,14 +34,16 @@
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2022|AnyCPU' ">
       <OutputPath>bin\Debug2022\</OutputPath>
       <DefineConstants>DEBUG;TRACE</DefineConstants>
-      <DebugSymbols>false</DebugSymbols>
-      <DebugType>none</DebugType>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug2023|AnyCPU' ">
       <OutputPath>bin\Debug2023\</OutputPath>
       <DefineConstants>DEBUG;TRACE</DefineConstants>
-      <DebugSymbols>false</DebugSymbols>
-      <DebugType>none</DebugType>
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <PlatformTarget>x64</PlatformTarget>
     </PropertyGroup>
     <PropertyGroup>
       <PostBuildEvent>echo Configuration: $(Configuration)
@@ -53,6 +55,7 @@ if $(Configuration) == Debug2023 goto 2023
 echo Copying results to 2022
 if not exist "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL" mkdir "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL"
 copy "$(TargetDir)AiCorb.dll"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL"
+copy "$(TargetDir)AiCorb.pdb"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL"
 copy "$(TargetDir)AiCorb.addin"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2022"
 copy "$(TargetDir)Newtonsoft.Json.dll" "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL"
 copy "$(TargetDir)MaterialDesignColors.dll" "%PROGRAMDATA%\Autodesk\Revit\Addins\2022\GEL"
@@ -64,7 +67,8 @@ goto exit
 echo Copying results to 2023
 if not exist "%PROGRAMDATA%\Autodesk\Revit\Addins\2021\GEL" mkdir "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
 copy "$(TargetDir)AiCorb.dll"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
-copy "$(TargetDir)AiCorb.addin"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
+copy "$(TargetDir)AiCorb.pdb"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
+copy "$(TargetDir)AiCorb.addin"  "%PROGRAMDATA%\Autodesk\Revit\Addins\2023"
 copy "$(TargetDir)Newtonsoft.Json.dll" "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
 copy "$(TargetDir)MaterialDesignColors.dll" "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
 copy "$(TargetDir)MaterialDesignThemes.Wpf.dll" "%PROGRAMDATA%\Autodesk\Revit\Addins\2023\GEL"
@@ -114,7 +118,10 @@ goto exit
       </None>
     </ItemGroup>
     <ItemGroup>
-      <EmbeddedResource Include="Resorces\Images\innovation.png" />
+      <EmbeddedResource Include="Resources\icons\hello-16.png" />
+      <EmbeddedResource Include="Resources\icons\innovation.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Import Project="..\packages\MaterialDesignThemes.5.0.0-ci484\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.5.0.0-ci484\build\MaterialDesignThemes.targets')" />

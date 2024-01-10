@@ -10,11 +10,15 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Windows.Media.Imaging;
+using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Events;
 
 namespace AiCorb
 {
+    [Transaction(TransactionMode.Manual)]
+
+    [Regeneration(RegenerationOption.Manual)]
     public class App : IExternalApplication
     {
         private static string _apptab = "AiCorb";
@@ -22,21 +26,20 @@ namespace AiCorb
         public Result OnStartup(UIControlledApplication application)
         {
             application.CreateRibbonTab(_apptab);
+           
             RibbonPanel ribbonPanel = application.CreateRibbonPanel( _apptab,_panelName);
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
             PushButtonData buttonData = new PushButtonData("cmdHelloWorld",
                 "Hello World", thisAssemblyPath, "AiCorb.Commands.HelloWorldCommand");
-            
             PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
-            if (pushButton != null) pushButton.ToolTip = "Say hello to the entire world.";
-            
-            Assembly myAssembly = Assembly.GetExecutingAssembly();
-            Stream myStream = myAssembly.GetManifestResourceStream( "AiCorb.Resorces.Images.innovation.png");
-            Bitmap bmp = new Bitmap(myStream);
-            ImageSource bitmap = GetImageSource(bmp);
-           
-
-            pushButton.LargeImage = bitmap;
+            if (pushButton != null)
+            {
+                pushButton.ToolTip = "Say hello to the entire world.";
+                //Uri uriImage = new Uri(@"C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\Resources\icons\hello-16.png");
+                //BitmapImage largeImage = new BitmapImage(uriImage);
+                pushButton.LargeImage =PngImageSource( "AiCorb.Resources.icons.innovation.png");
+                //
+            }
 
             return Result.Succeeded;
         }
@@ -46,24 +49,19 @@ namespace AiCorb
             return Result.Succeeded;
         }
         
-        
-
-        private BitmapSource GetImageSource(Image img)
+        private System.Windows.Media.ImageSource PngImageSource(string embeddedPath)
         {
-            BitmapImage bmp = new BitmapImage();
-            using(MemoryStream ms = new MemoryStream())
-            {
-                img.Save(ms, ImageFormat.Png);
-                ms.Position = 0;
-                bmp.BeginInit();
-                bmp.CacheOption = BitmapCacheOption.OnLoad;
-                bmp.UriSource = null;
-                bmp.StreamSource = ms;
-
-                bmp.EndInit();
-            }
-            return bmp;
+            Stream stream = this.GetType().Assembly.GetManifestResourceStream(embeddedPath);
+            var decoder = new System.Windows.Media.Imaging.PngBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             
+            return decoder.Frames[0];
+        }
+        private System.Windows.Media.ImageSource BmpImageSource(string embeddedPath)
+        {
+            Stream stream = this.GetType().Assembly.GetManifestResourceStream(embeddedPath);
+            var decoder = new System.Windows.Media.Imaging.BmpBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
+            
+            return decoder.Frames[0];
         }
         
     }

@@ -1,4 +1,5 @@
-﻿using Autodesk.Revit.DB;
+﻿using System;
+using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.Attributes;
 
@@ -11,6 +12,7 @@ namespace AiCorb.Commands
             ref string message, ElementSet elements)
         {
             TaskDialog.Show("Revit", "Hello World");
+            Console.WriteLine(message);
             return Autodesk.Revit.UI.Result.Succeeded;
         }
     }
