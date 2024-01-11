@@ -16,9 +16,7 @@ using Autodesk.Revit.UI.Events;
 
 namespace AiCorb
 {
-    [Transaction(TransactionMode.Manual)]
 
-    [Regeneration(RegenerationOption.Manual)]
     public class App : IExternalApplication
     {
         private static string _apptab = "AiCorb";
@@ -35,10 +33,8 @@ namespace AiCorb
             if (pushButton != null)
             {
                 pushButton.ToolTip = "Say hello to the entire world.";
-                //Uri uriImage = new Uri(@"C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\Resources\icons\hello-16.png");
-                //BitmapImage largeImage = new BitmapImage(uriImage);
                 pushButton.LargeImage =PngImageSource( "AiCorb.Resources.icons.innovation.png");
-                //
+                
             }
 
             return Result.Succeeded;

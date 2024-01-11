@@ -78,6 +78,9 @@ goto exit
 :exit</PostBuildEvent>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="MaterialDesignColors, Version=3.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
+          <HintPath>..\packages\MaterialDesignColors.3.0.0-ci484\lib\net462\MaterialDesignColors.dll</HintPath>
+        </Reference>
         <Reference Include="MaterialDesignThemes.Wpf, Version=5.0.0.0, Culture=neutral, PublicKeyToken=df2a72020bd7962a, processorArchitecture=MSIL">
           <HintPath>..\packages\MaterialDesignThemes.5.0.0-ci484\lib\net462\MaterialDesignThemes.Wpf.dll</HintPath>
         </Reference>
@@ -107,6 +110,12 @@ goto exit
         <Compile Include="App.cs" />
         <Compile Include="Commands\HelloWorldCommand.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="Views\MainPage.xaml.cs">
+          <DependentUpon>MainPage.xaml</DependentUpon>
+        </Compile>
+        <Compile Include="Views\MyWindow.xaml.cs">
+          <DependentUpon>MyWindow.xaml</DependentUpon>
+        </Compile>
     </ItemGroup>
     <ItemGroup>
       <None Include="App.config" />
@@ -122,6 +131,12 @@ goto exit
       <EmbeddedResource Include="Resources\icons\innovation.png">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </EmbeddedResource>
+    </ItemGroup>
+    <ItemGroup>
+        <Page Include="Views\MainPage.xaml">
+          <Generator>MSBuild:Compile</Generator>
+        </Page>
+        <Page Include="Views\MyWindow.xaml" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Import Project="..\packages\MaterialDesignThemes.5.0.0-ci484\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.5.0.0-ci484\build\MaterialDesignThemes.targets')" />
