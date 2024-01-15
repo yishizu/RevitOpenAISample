@@ -36,6 +36,14 @@ namespace AiCorb
                 pushButton.LargeImage =PngImageSource( "AiCorb.Resources.icons.innovation.png");
                 
             }
+            PushButtonData pushButtonData2 = new PushButtonData("cmdApiTest",
+                "Api Test", thisAssemblyPath, "AiCorb.Commands.ApiTestCommand");    
+            PushButton pushButton2 = ribbonPanel.AddItem(pushButtonData2) as PushButton;
+            if (pushButton2 != null)
+            {
+                pushButton2.ToolTip = "Test the Revit API.";
+                pushButton2.LargeImage = PngImageSource("AiCorb.Resources.icons.api-32.png");
+            }
 
             return Result.Succeeded;
         }

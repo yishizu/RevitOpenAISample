@@ -1,4 +1,5 @@
 ﻿using System;
+using AiCorb.Utils;
 using AiCorb.Views;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
@@ -15,9 +16,13 @@ namespace AiCorb.Commands
         public Result Execute(ExternalCommandData commandData,
             ref string message, ElementSet elements)
         {
-            var test = new MyWindow();
-            //TaskDialog.Show("AiCorb", "Hello World!");
-            test.Show();
+            using (var loader = new AssemblyLoader())
+            {
+                var test = new MainPage();
+                //TaskDialog.Show("AiCorb", "Hello World!");
+                test.Show();
+            };
+            
             return Autodesk.Revit.UI.Result.Succeeded;
         }
     }
