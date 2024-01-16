@@ -4,17 +4,17 @@
 library
 C#
 .cs
-C:\Users\ykish\OneDrive\Documents\GitHub\AiCorb\AiCorb\obj\Debug\
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\
 AiCorb
 none
 false
 DEBUG;TRACE
 
-2213056292
+21057659112
 
-552458099
-16-930173488
-Views\MainPage.xaml;Views\MyWindow.xaml;
+111713769572
+171088435767
+Views\AiCorbMainPage.xaml;Views\MyWindow.xaml;
 
-True
+False
 

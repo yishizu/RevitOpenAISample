@@ -27,12 +27,12 @@ namespace AiCorb
            
             RibbonPanel ribbonPanel = application.CreateRibbonPanel( _apptab,_panelName);
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButtonData buttonData = new PushButtonData("cmdHelloWorld",
-                "Hello World", thisAssemblyPath, "AiCorb.Commands.HelloWorldCommand");
+            PushButtonData buttonData = new PushButtonData("cmdFacadeChangeByImage",
+                "FacadeByImage", thisAssemblyPath, "AiCorb.Commands.HelloWorldCommand");
             PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
             if (pushButton != null)
             {
-                pushButton.ToolTip = "Say hello to the entire world.";
+                pushButton.ToolTip = "FacadeChangeByImage.";
                 pushButton.LargeImage =PngImageSource( "AiCorb.Resources.icons.innovation.png");
                 
             }
