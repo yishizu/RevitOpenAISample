@@ -7,7 +7,7 @@
       xmlns:viewModel="clr-namespace:AiCorb.ViewModel"
       d:DataContext="{d:DesignInstance Type=viewModel:DesignTimeViewModel, IsDesignTimeCreatable=True}"
       mc:Ignorable="d"
-      Title="MainPage" Height="450" Width="800">
+      Title="MainPage" Height="500" Width="900">
     <Window.Resources>
         <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
             <ResourceDictionary.MergedDictionaries>
@@ -16,31 +16,102 @@
                 <ResourceDictionary
                     Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary
-                    Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.BlueGrey.xaml" />
+                    Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/materialdesigncolor.bluegrey.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/materialdesigncolor.red.xaml" />
                 
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
-
-        <Grid>
-            <!-- ListView の例 -->
-            <ListView ItemsSource="{Binding FacadeDataCollection}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{Binding CroppedImagePath}" Width="100" Height="100" Stretch="UniformToFill"/>
-                            <StackPanel Orientation="Vertical" Margin="10,0,0,0">
-                                <TextBlock Text="{Binding Id}"/>
-                                <TextBlock Text="{Binding CurtainPanelType}"/>
-                                <TextBlock Text="{Binding　PanelAspectRatio }"/>
-                                <TextBlock Text="{Binding　FrameThicknessRatioU }"/>
-                                <TextBlock Text="{Binding　WindowAspectRatio }"/>
-                                <TextBlock Text="{Binding　WindowDepth }"/>
-                            </StackPanel>
+        <Grid xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Margin="10">
+            <StackPanel>
+                <StackPanel Margin="5" >
+                <Border BorderBrush="Gray" BorderThickness="0.5" >
+                <StackPanel>
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal"  >
+                            <Button Margin="10" Width="105">Create New</Button>
+                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="10" Width="105">Edit</Button>
+                            <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="10" Width="105">Duplicate</Button>
+                            <Button Style="{StaticResource MaterialDesignOutlinedSecondaryButton}" Margin="10" Width="105">Delete</Button>
                         </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-        </Grid>
+                        <StackPanel>
+                            <ListView ItemsSource="{Binding FacadeDataCollection}" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Visible"  Height="300" >
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal" ItemWidth="400" ItemHeight="110"  />
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <materialDesign:Card  >
+                                    <StackPanel Orientation="Horizontal" Width="400" >
+                                        <Image Source="{Binding CroppedImagePath}" Width="95" Height="100" Stretch="UniformToFill"/>
+                                        <Image Source="{Binding RevitImagePath}" Width="95" Height="100" Stretch="UniformToFill"/>
+                                        <StackPanel Orientation="Vertical" Margin="10,0,0,0">
+                                            <StackPanel  Orientation="Vertical" Margin="10,0,0,0">
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="id: "/>
+                                                    <Run Text="{Binding Id}"/>
+                                                </TextBlock>
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="Panel Type: "/>
+                                                    <Run Text="{Binding CurtainPanelType}"/>
+                                                </TextBlock>
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="Panel Aspect Ratio: "/>
+                                                    <Run Text="{Binding　PanelAspectRatio }"/>
+                                                </TextBlock>
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="Frame Thickness RatioU: "/>
+                                                    <Run Text="{Binding　FrameThicknessRatioU }"/>
+                                                </TextBlock>
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="Window Aspect Ratio: "/>
+                                                    <Run Text="{Binding　WindowAspectRatio }"/>
+                                                </TextBlock>
+                                                <TextBlock FontSize="10" Margin="0,0,0,2">
+                                                    <Run Text="Window Depth: "/>
+                                                    <Run Text="{Binding　WindowDepth }"/>
+                                                </TextBlock>
+                                            </StackPanel>
+
+                                        </StackPanel>
+                                    </StackPanel>
+                                </materialDesign:Card>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                      
+                    </StackPanel>
+                        
+                </StackPanel>
+            </StackPanel>
+            </Border>
+            </StackPanel>
+            
+            <StackPanel Margin="5">
+          
+                <StackPanel>
+                    <StackPanel  Margin="10">
+                        <StackPanel Orientation="Horizontal"  >
+                            <Button Margin="10" Width="105">Select Face</Button>
+                            <TextBlock VerticalAlignment="Center">id:</TextBlock>
+                            <TextBlock Width="110" VerticalAlignment="Center"></TextBlock>
+                            <Button Margin="10" Width="105">Apply</Button>
+                        </StackPanel>
+                    <StackPanel>
+                        
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+           
+            </StackPanel>
+            </StackPanel>
+            
+            
+            
+            
+    </Grid>
     
 </Window>

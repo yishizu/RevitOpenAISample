@@ -28,13 +28,12 @@ namespace AiCorb
             RibbonPanel ribbonPanel = application.CreateRibbonPanel( _apptab,_panelName);
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
             PushButtonData buttonData = new PushButtonData("cmdFacadeChangeByImage",
-                "FacadeByImage", thisAssemblyPath, "AiCorb.Commands.HelloWorldCommand");
+                "FacadeByImage", thisAssemblyPath, "AiCorb.Commands.FacadeChangeByImage");
             PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
             if (pushButton != null)
             {
                 pushButton.ToolTip = "FacadeChangeByImage.";
                 pushButton.LargeImage =PngImageSource( "AiCorb.Resources.icons.innovation.png");
-                
             }
             PushButtonData pushButtonData2 = new PushButtonData("cmdApiTest",
                 "Api Test", thisAssemblyPath, "AiCorb.Commands.ApiTestCommand");    
@@ -44,7 +43,6 @@ namespace AiCorb
                 pushButton2.ToolTip = "Test the Revit API.";
                 pushButton2.LargeImage = PngImageSource("AiCorb.Resources.icons.api-32.png");
             }
-
             return Result.Succeeded;
         }
 
@@ -53,24 +51,21 @@ namespace AiCorb
             return Result.Succeeded;
         }
         
-        private System.Windows.Media.ImageSource PngImageSource(string embeddedPath)
+        private ImageSource PngImageSource(string embeddedPath)
         {
             Stream stream = this.GetType().Assembly.GetManifestResourceStream(embeddedPath);
-            var decoder = new System.Windows.Media.Imaging.PngBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
+            var decoder = new PngBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             
             return decoder.Frames[0];
         }
-        private System.Windows.Media.ImageSource BmpImageSource(string embeddedPath)
+        private ImageSource BmpImageSource(string embeddedPath)
         {
             Stream stream = this.GetType().Assembly.GetManifestResourceStream(embeddedPath);
-            var decoder = new System.Windows.Media.Imaging.BmpBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
+            var decoder = new BmpBitmapDecoder(stream, BitmapCreateOptions.PreservePixelFormat, BitmapCacheOption.Default);
             
             return decoder.Frames[0];
         }
-        
     }
-
-  
 }
 
 class Utils

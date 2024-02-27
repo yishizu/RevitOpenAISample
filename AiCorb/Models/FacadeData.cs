@@ -15,19 +15,21 @@ namespace AiCorb.Models
         public double WindowAspectRatio { get; set; }
         public double WindowDepth { get; set; }
         public string CurtainPanelType { get; set; }
+        public double PanelHeight { get; set; }
       
 
-        public FacadeData(string croppedImagePath, string originalImagePath, double panelAspectRatio, double frameThicknessRatio, double windowAspectRatio, double windowDepth, string curtainPanelType)
+        public FacadeData(string croppedImagePath, string originalImagePath, string revitImagePath,double panelAspectRatio, double frameThicknessRatio, double windowAspectRatio, double windowDepth, string curtainPanelType)
         {
             CroppedImagePath = croppedImagePath;
             OriginalImagePath = originalImagePath;
+            RevitImagePath = revitImagePath;
             PanelAspectRatio = panelAspectRatio;
             FrameThicknessRatioU = frameThicknessRatio;
             FrameThicknessRatioV = CalculateFrameThicknessRatioV(frameThicknessRatio, panelAspectRatio,windowAspectRatio);
             WindowAspectRatio = windowAspectRatio;
             WindowDepth = windowDepth;
             CurtainPanelType = curtainPanelType;
-           
+            PanelHeight = 4000;
         }
         private double CalculateFrameThicknessRatioV(double frameThicknessRatioU, double panelAspectRatio,double windowAspectRatio)
         {

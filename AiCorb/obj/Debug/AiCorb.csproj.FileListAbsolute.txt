@@ -22,3 +22,6 @@ C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\AiCorb.csproj.CoreCompil
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\AiCorb.csproj.CopyComplete
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\AiCorb.dll
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\AiCorb.pdb
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\Resources\images\facade1.jpg
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\Resources\images\facade2.jpg
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\bin\Debug2022\Resources\images\revit.png

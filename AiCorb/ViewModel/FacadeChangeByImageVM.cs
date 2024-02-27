@@ -8,15 +8,15 @@ namespace AiCorb.ViewModel
 {
     public class FacadeChangeByImageVM : INotifyPropertyChanged
     {
-        private ObservableCollection<FacadeData> _allfacadeData;
-        public ObservableCollection<FacadeData> AllfacadeData
+        private ObservableCollection<FacadeData> _facadeDataCollection;
+        public ObservableCollection<FacadeData> FacadeDataCollection
         {
-            get { return _allfacadeData; }
+            get { return _facadeDataCollection; }
             set
             {
-                if (_allfacadeData != value)
+                if (_facadeDataCollection != value)
                 {
-                    _allfacadeData = value;
+                    _facadeDataCollection = value;
                     NotifyPropertyChanged("AllFacadeData");
                 }
             }
