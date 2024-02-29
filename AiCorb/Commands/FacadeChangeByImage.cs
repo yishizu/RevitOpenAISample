@@ -28,26 +28,25 @@ namespace AiCorb.Commands
                 vm.FacadeDataCollection = new ObservableCollection<FacadeData>
                 {
                     
-                    new FacadeData( imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
-                    new FacadeData( imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
-                    new FacadeData( imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
-                    new FacadeData( imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
-                    new FacadeData(imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
+                    new FacadeData( "I",imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
+                    new FacadeData("U",imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
+                    new FacadeData("T",imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
+                    new FacadeData("Y",imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
+                    new FacadeData( "H",imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
+                    new FacadeData("G",imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
+                    new FacadeData("A",imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
+                    new FacadeData("W",imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
+                    new FacadeData( "Q",imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
+                    new FacadeData("G",imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
+                    new FacadeData("F",imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
+                    new FacadeData("E",imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
+                    new FacadeData( "D",imagePath,imagePath2,imagePath2,1.5, 0.1, 1.2, 0.5, "isolated-windows"),
+                    new FacadeData("C",imagePath,imagePath2,imagePath2,1.8, 0.15, 1.3, 0.6, "isolated-windows"),
+                    new FacadeData("B",imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
+                    new FacadeData("A",imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
                 };
-                var test = new AiCorbMainPage(uiDoc)
+                var test = new AiCorbMainPage(uiDoc, vm);
                 {
-                    DataContext = vm
                 };
                 test.Show();
             }

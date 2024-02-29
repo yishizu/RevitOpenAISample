@@ -1,0 +1,93 @@
+﻿<UserControl x:Class="AiCorb.Views.EditDialogView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:AiCorb.Views"
+        xmlns:viewModel="clr-namespace:AiCorb.ViewModel"
+        mc:Ignorable="d"
+        Height="300" Width="350"
+        d:DataContext="{d:DesignInstance Type=viewModel:EditDialogViewModel, IsDesignTimeCreatable=True}"
+        DataContext="viewModel:EditDialogViewModel">
+    <UserControl.Resources>
+        <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary
+                    Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/materialdesigncolor.bluegrey.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/materialdesigncolor.red.xaml" />
+                
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    
+    <materialDesign:DialogHost>
+        <StackPanel Margin="10">
+            <StackPanel  Orientation="Vertical" Margin="5,0,0,0">
+                <TextBlock Style="{StaticResource MaterialDesignHeadline6TextBlock}" Text="Edit Parameters" Margin="0,0,0,10"/>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center"  Margin="0,0,0,0">
+                        Panel Type: 
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.CurtainPanelType, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.CurtainPanelType}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center"  Margin="0,0,0,0">
+                        <Run Text="Panel Aspect Ratio: "/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.PanelAspectRatio, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.PanelAspectRatio}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center" Margin="0,0,0,0">
+                        <Run Text="Frame Thickness RatioU: "/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.FrameThicknessRatioU, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.FrameThicknessRatioU}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center"  Margin="0,0,0,0">
+                        <Run Text="Window Aspect Ratio: "/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.WindowAspectRatio, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.WindowAspectRatio}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center" Margin="0,0,0,0">
+                        <Run Text="Window Depth: "/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.WindowDepth, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.WindowDepth}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Width="110" FontSize="10" VerticalAlignment="Center"  Margin="0,0,0,0">
+                        <Run Text="Panel Height: "/>
+                    </TextBlock>
+                    <TextBox VerticalAlignment="Center"  Width="100" FontSize="10" Margin="0,0,0,0" Text="{Binding FacadeData.PanelHeight, UpdateSourceTrigger=PropertyChanged}" />
+                    <TextBlock FontSize="10" VerticalAlignment="Center" Text="{Binding OriginalFacadeData.PanelHeight}"></TextBlock>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                    <Button Content="Update" Style="{StaticResource MaterialDesignFlatButton}"
+                            Command="{Binding UpdateCommand}">
+                        <Button.CommandParameter>
+                            <system:Boolean>True</system:Boolean>
+                        </Button.CommandParameter>
+                    </Button>
+                    <Button Content="Cancel" Style="{StaticResource MaterialDesignFlatButton}"
+                            Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}">
+                        <Button.CommandParameter>
+                            <system:Boolean>False</system:Boolean>
+                        </Button.CommandParameter>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </materialDesign:DialogHost>
+</UserControl>

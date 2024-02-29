@@ -20,7 +20,7 @@ namespace AiCorb.Commands
             {
                 var uiApp = commandData.Application;
                 var uiDoc = uiApp.ActiveUIDocument;
-                var test = new AiCorbMainPage(uiDoc);
+                var test = new MyWindow();
                 //TaskDialog.Show("AiCorb", "Hello World!");
                 test.Show();
             };
