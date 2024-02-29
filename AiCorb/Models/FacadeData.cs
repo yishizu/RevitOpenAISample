@@ -190,13 +190,6 @@ namespace AiCorb.Models
         {
             
         }
-        public FacadeData(string name, string croppedImagePath, string originalImagePath )
-        {
-            Name = name;
-            CroppedImagePath = croppedImagePath;
-            OriginalImagePath = originalImagePath;
-            Id = System.Guid.NewGuid().ToString();
-        }
         public FacadeData(string name)
         {
             Name = name;
@@ -266,6 +259,21 @@ namespace AiCorb.Models
         public static FacadeData CreateFromJson(string json)
         {
             return JsonConvert.DeserializeObject<FacadeData>(json);
+        }
+        public void CopyImage(string sourceImagePath, string croppedImagePath)
+        {
+            var destinationImageDir = Path.Combine(savePath, Id);
+            if (!Directory.Exists(destinationImageDir))
+            {
+                Directory.CreateDirectory(destinationImageDir);
+            }
+            var destinationImagePath = Path.Combine(destinationImageDir,"croppedImage.jpg");
+            if (!string.IsNullOrEmpty(sourceImagePath) && File.Exists(sourceImagePath))
+            {
+                File.Copy(sourceImagePath, destinationImagePath, true);
+            }
+            OriginalImagePath = sourceImagePath;
+            CroppedImagePath = destinationImagePath;
         }
         public event PropertyChangedEventHandler PropertyChanged;
 

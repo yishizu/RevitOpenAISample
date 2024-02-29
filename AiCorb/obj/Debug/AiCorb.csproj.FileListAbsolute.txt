@@ -49,3 +49,6 @@ C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\DuplicateDialogVie
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\DuplicateDialogView.baml
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\AlertDialogView.g.cs
 C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\AlertDialogView.baml
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\CreateNewFacadeDataView.g.cs
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\Views\CreateNewFacadeDataView.baml
+C:\Users\ykish\Documents\GitHub\AiCorb\AiCorb\obj\Debug\GeneratedInternalTypeHelper.g.cs

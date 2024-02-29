@@ -42,6 +42,23 @@ namespace AiCorb.ViewModel
                 }
             }
         }
+        #region CreateNewCommand
+
+        public ICommand CreateNewCommand { get; }
+        private async void CreateNewExecute(object parameter)
+        {
+            await ShowCreateNewDialog();
+        }
+        
+        private async Task ShowCreateNewDialog()
+        {
+            var selectedFacadeData = SelectedItem as FacadeData;
+            var viewModel = new CreateNewFacadeDataViewModel(FacadeDataCollection);
+            var view = new CreateNewFacadeDataView { DataContext = viewModel };
+            var result = await DialogHost.Show(view,"FacadeChangeByImageDialogHost");
+        }
+
+        #endregion
 
         #region EditCommand
 
@@ -103,6 +120,7 @@ namespace AiCorb.ViewModel
             EditCommand = new RelayCommand(EditExecute, CanEditExecute);
             DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
             DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);
+            CreateNewCommand = new RelayCommand(CreateNewExecute);
             FacadeDataCollection =LoadFacadeDataFromJson();
         }
 

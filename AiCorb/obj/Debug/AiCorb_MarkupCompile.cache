@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 
-5-80681840
+6-1290495303
 31200514915
-20-903482448
+22-1992936313
 123362822323
-Views\AiCorbMainPage.xaml;Views\AlertDialogView.xaml;Views\DuplicateDialogView.xaml;Views\EditDialogView.xaml;Views\MyWindow.xaml;
+Views\AiCorbMainPage.xaml;Views\AlertDialogView.xaml;Views\CreateNewFacadeDataView.xaml;Views\DuplicateDialogView.xaml;Views\EditDialogView.xaml;Views\MyWindow.xaml;
 
 False
 

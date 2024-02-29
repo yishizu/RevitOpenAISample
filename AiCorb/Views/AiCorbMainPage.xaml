@@ -36,7 +36,7 @@
                 <StackPanel>
                     <StackPanel>
                         <StackPanel Orientation="Horizontal"  >
-                            <Button Margin="10" Width="105">Create New</Button>
+                            <Button Margin="10" Width="105" Command="{Binding CreateNewCommand}">Create New</Button>
                             <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="10" Width="105" Command="{Binding EditCommand}" Visibility="{Binding EditButtonVisibility}">Edit</Button>
                             <Button Style="{StaticResource MaterialDesignOutlinedButton}" Margin="10" Width="105" Command="{Binding DuplicateCommand}" Visibility="{Binding EditButtonVisibility}">Duplicate</Button>
                             <Button Style="{StaticResource MaterialDesignOutlinedSecondaryButton}" Margin="10" Width="105" Command="{Binding DeleteCommand}" Visibility="{Binding EditButtonVisibility}">Delete</Button>
