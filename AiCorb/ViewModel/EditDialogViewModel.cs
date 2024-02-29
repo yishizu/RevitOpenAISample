@@ -87,6 +87,7 @@ namespace AiCorb.ViewModel
                
                 NotifyPropertyChanged(nameof(FacadeDataCollection)); // コレクションの変更を通知
             }
+            originalItem.SaveFacadeData();
             DialogHost.CloseDialogCommand.Execute(null, null);
         }
         

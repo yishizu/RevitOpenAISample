@@ -49,13 +49,14 @@ namespace AiCorb.ViewModel
         public DuplicateDialogViewModel(FacadeData selectedItem, ObservableCollection<FacadeData> facadeDataCollection)
         {
             OriginalFacadeData = selectedItem;
-            FacadeData = OriginalFacadeData.DuplicatedFacadeData(OriginalFacadeData, OriginalFacadeData.Name + " Copy");
+            FacadeData = OriginalFacadeData.DuplicatedFacadeData(OriginalFacadeData.Name + " Copy");
             FacadeDataCollection = facadeDataCollection;
             DuplicateCommand = new RelayCommand(param => DuplicateData(param));
         }
         private void DuplicateData(object parameter)
         {
             FacadeDataCollection.Add(FacadeData);
+            FacadeData.SaveFacadeData();
             DialogHost.CloseDialogCommand.Execute(null, null);
         }
         

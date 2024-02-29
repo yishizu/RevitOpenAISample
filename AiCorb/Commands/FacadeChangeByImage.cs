@@ -25,6 +25,7 @@ namespace AiCorb.Commands
                 var assemblyPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 var imagePath = System.IO.Path.Combine(assemblyPath, "Resources", "images", "facade1.jpg");
                 var imagePath2 = System.IO.Path.Combine(assemblyPath, "Resources", "images", "revit.png");
+                /*
                 vm.FacadeDataCollection = new ObservableCollection<FacadeData>
                 {
                     
@@ -45,6 +46,7 @@ namespace AiCorb.Commands
                     new FacadeData("B",imagePath,imagePath2,imagePath2,2.1, 0.2, 1.4, 0.7, "isolated-windows"),
                     new FacadeData("A",imagePath,imagePath2,imagePath2,2.4, 0.25, 1.5, 0.8, "isolated-windows"),
                 };
+                */
                 var test = new AiCorbMainPage(uiDoc, vm);
                 {
                 };

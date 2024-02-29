@@ -80,6 +80,7 @@ namespace AiCorb.ViewModel
         private void DeleteData(object parameter)
         {
             FacadeDataCollection.Remove(FacadeData);
+            FacadeData.DeleteFacadeData();
             DialogHost.CloseDialogCommand.Execute(null, null);
             
         }

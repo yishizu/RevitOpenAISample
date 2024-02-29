@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.Runtime.CompilerServices;
+using AiCorb.Utils;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
+using Newtonsoft.Json;
 
 namespace AiCorb.Models
 {
@@ -11,6 +14,7 @@ namespace AiCorb.Models
     public class FacadeData: INotifyPropertyChanged
     {
         private const double TOLERANCE = 0.0001;
+       private static string savePath = AiCorbSettings.SAVE_PATH;
         private string _name;
         public string Name
         {
@@ -167,6 +171,7 @@ namespace AiCorb.Models
 
         public FacadeData(string name,string croppedImagePath, string originalImagePath, string revitImagePath,double panelAspectRatio, double frameThicknessRatio, double windowAspectRatio, double windowDepth, string curtainPanelType)
         {
+            
             Name = name;
             Id = System.Guid.NewGuid().ToString();
             CroppedImagePath = croppedImagePath;
@@ -198,19 +203,19 @@ namespace AiCorb.Models
             Id = System.Guid.NewGuid().ToString();
         }
 
-        public FacadeData DuplicatedFacadeData(FacadeData facadeData, string name)
+        public FacadeData DuplicatedFacadeData( string name)
         {
             var newFacadeData = new FacadeData(name);
-            newFacadeData.CroppedImagePath = facadeData.CroppedImagePath;
-            newFacadeData.OriginalImagePath = facadeData.OriginalImagePath;
-            newFacadeData.RevitImagePath = facadeData.RevitImagePath;
-            newFacadeData.PanelAspectRatio = facadeData.PanelAspectRatio;
-            newFacadeData.FrameThicknessRatioU = facadeData.FrameThicknessRatioU;
-            newFacadeData.FrameThicknessRatioV = facadeData.FrameThicknessRatioV;
-            newFacadeData.WindowAspectRatio = facadeData.WindowAspectRatio;
-            newFacadeData.WindowDepth = facadeData.WindowDepth;
-            newFacadeData.CurtainPanelType = facadeData.CurtainPanelType;
-            newFacadeData.PanelHeight = facadeData.PanelHeight;
+            newFacadeData.CroppedImagePath = this.CroppedImagePath;
+            newFacadeData.OriginalImagePath = this.OriginalImagePath;
+            newFacadeData.RevitImagePath = this.RevitImagePath;
+            newFacadeData.PanelAspectRatio = this.PanelAspectRatio;
+            newFacadeData.FrameThicknessRatioU = this.FrameThicknessRatioU;
+            newFacadeData.FrameThicknessRatioV = this.FrameThicknessRatioV;
+            newFacadeData.WindowAspectRatio = this.WindowAspectRatio;
+            newFacadeData.WindowDepth = this.WindowDepth;
+            newFacadeData.CurtainPanelType = this.CurtainPanelType;
+            newFacadeData.PanelHeight = this.PanelHeight;
             
             return newFacadeData;
         }   
@@ -222,7 +227,46 @@ namespace AiCorb.Models
             return frameThicknessRatioV;
         }
 
+        public void SaveFacadeData()
+        {
+            try
+            {
+                var directoryPath = Path.Combine(savePath, Id);
+                Directory.CreateDirectory(directoryPath); // ディレクトリが存在しない場合は作成
 
+                // JSONデータを保存
+                var jsonPath = Path.Combine(directoryPath, "facadeData.json");
+                var jsonData = JsonConvert.SerializeObject(this);
+                File.WriteAllText(jsonPath, jsonData);
+
+                // 画像ファイルをコピー
+                CopyImageFile(this.CroppedImagePath, Path.Combine(directoryPath, "croppedImage.jpg"));
+                CopyImageFile(this.OriginalImagePath, Path.Combine(directoryPath, "originalImage.jpg"));
+                CopyImageFile(this.RevitImagePath, Path.Combine(directoryPath, "revitScreen.jpg"));
+            }
+            catch (Exception ex)
+            {
+                // エラーログを出力またはユーザーに通知
+                Console.WriteLine("An error occurred while saving FacadeData: " + ex.Message);
+            }
+        }
+
+        private void CopyImageFile(string sourcePath, string destinationPath)
+        {
+            if (!string.IsNullOrEmpty(sourcePath) && File.Exists(sourcePath))
+            {
+                File.Copy(sourcePath, destinationPath, true);
+            }
+        }
+        public void DeleteFacadeData()
+        {
+            var directoryPath = Path.Combine(savePath, this.Id);
+            if (Directory.Exists(directoryPath)) Directory.Delete(directoryPath, true);
+        }
+        public static FacadeData CreateFromJson(string json)
+        {
+            return JsonConvert.DeserializeObject<FacadeData>(json);
+        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)

@@ -9,6 +9,7 @@ using System.Windows.Input;
 using MaterialDesignColors;
 using AiCorb.Commands;
 using AiCorb.Models;
+using AiCorb.Utils;
 using AiCorb.Views;
 using MaterialDesignThemes.Wpf;
 
@@ -16,17 +17,6 @@ namespace AiCorb.ViewModel
 {
     public class FacadeChangeByImageVM : INotifyPropertyChanged
     {
-        private bool _isSelected;
-        public bool IsSelected
-        {
-            get => _isSelected;
-            set
-            {
-                _isSelected = value;
-                NotifyPropertyChanged(nameof(_isSelected));
-                NotifyPropertyChanged(nameof(EditButtonVisibility));
-            }
-        }
         private object _selectedItem;
         public object SelectedItem
         {
@@ -113,8 +103,26 @@ namespace AiCorb.ViewModel
             EditCommand = new RelayCommand(EditExecute, CanEditExecute);
             DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
             DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);
+            FacadeDataCollection =LoadFacadeDataFromJson();
         }
-        
+
+        private ObservableCollection<FacadeData> LoadFacadeDataFromJson()
+        {
+            var facadeDataCollection = new ObservableCollection<FacadeData>();
+            var savePath = AiCorbSettings.SAVE_PATH;
+            var directorys = System.IO.Directory.GetDirectories(savePath);
+            foreach (var directory in directorys)
+            {
+                var jsonPath = System.IO.Path.Combine(directory, "facadeData.json");
+                if (!System.IO.File.Exists(jsonPath)) continue;
+                var jsonContent = System.IO.File.ReadAllText(jsonPath);
+                var facadeData = FacadeData.CreateFromJson(jsonContent);
+                
+                facadeDataCollection.Add(facadeData);
+            }
+            return facadeDataCollection;
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
         protected void NotifyPropertyChanged(string propertyName)
         {
