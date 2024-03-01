@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using MaterialDesignColors;
 using AiCorb.Commands;
+using AiCorb.ExternalEventHandler;
 using AiCorb.Models;
 using AiCorb.RevitServices;
 using AiCorb.Utils;
@@ -161,17 +162,22 @@ namespace AiCorb.ViewModel
         #endregion
         
         #region ApplyCommand
+        
+        public ExternalEvent setDivideFacadeEvent { get; set; }
+        private SetDivideFacadeEventHandler _setDivideFacadeEventHandler;
         public ICommand ApplyCommand { get; }
         void ApplyExecute(object parameter)
         {
-            _facadeManagementService.SetDivideFacade(SelectedItem as FacadeData);
-            
+            _setDivideFacadeEventHandler._facadeData = SelectedItem as FacadeData;
+            setDivideFacadeEvent?.Raise();
         }
         #endregion
         
         public FacadeChangeByImageVM(UIDocument uidoc)
         {
             _facadeManagementService = new FacadeManagementService(uidoc);
+            _setDivideFacadeEventHandler = new SetDivideFacadeEventHandler(_facadeManagementService);
+            setDivideFacadeEvent = ExternalEvent.Create(_setDivideFacadeEventHandler);
             EditCommand = new RelayCommand(EditExecute, CanEditExecute);
             DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
             DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);

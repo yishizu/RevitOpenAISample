@@ -119,6 +119,7 @@ goto exit
         <Compile Include="Commands\RelayCommand.cs" />
         <Compile Include="Data\DTypeData.cs" />
         <Compile Include="Data\ParamsData.cs" />
+        <Compile Include="ExternalEventHandler\SetDivideFacadeEventHandler.cs" />
         <Compile Include="Models\FacadeData.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="RevitServices\FacadeManagementService.cs" />

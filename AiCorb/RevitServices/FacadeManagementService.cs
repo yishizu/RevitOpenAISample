@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Windows;
 using AiCorb.Models;
 using AiCorb.Utils;
 
@@ -8,11 +10,15 @@ namespace AiCorb.RevitServices
     using Autodesk.Revit.DB;
     using Autodesk.Revit.UI;
     using Autodesk.Revit.UI.Selection;
+    
+    [Autodesk.Revit.Attributes.Transaction(Autodesk.Revit.Attributes.TransactionMode.Manual)]
     public class FacadeManagementService
     {
         private UIDocument _uidoc;
         private Document _doc = null;
         private Reference _selectedRef;
+        
+        private bool isDividedSurface = false;
         
         public FacadeManagementService(UIDocument uiDocument)
         {
@@ -30,7 +36,10 @@ namespace AiCorb.RevitServices
                 
                 if (_selectedRef != null)
                 {   
-                    
+                    Element selectedElement = _doc.GetElement(_selectedRef);
+                    DividedSurface ds = selectedElement as DividedSurface;
+                    if(ds ==null){isDividedSurface = false;}
+                    else{isDividedSurface = true;}
                     return _selectedRef;
                 }
             }
@@ -51,15 +60,16 @@ namespace AiCorb.RevitServices
             {
                 Element selectedElement = _doc.GetElement(_selectedRef);
                 DividedSurface ds = selectedElement as DividedSurface;
-                if(ds == null)
+                if(!isDividedSurface)
                 {
                 
                     Face selectedFace = selectedElement.GetGeometryObjectFromReference(_selectedRef) as Face;
                     using (Transaction trans = new Transaction(_doc, "Divide Facade"))
                     {
                         trans.Start();
-                        bool result =  DivideSurface(selectedFace, facadeData);
-                        
+                        bool result =  DivideSurface(_selectedRef, facadeData);
+                        isDividedSurface = true;
+                       
                         trans.Commit();
                         return result;
                     }
@@ -89,13 +99,14 @@ namespace AiCorb.RevitServices
             }
             return false;
         }
-        private bool DivideSurface(Face face, FacadeData facadeData)
+        private bool DivideSurface(Reference faceReference, FacadeData facadeData)
         {
-            if(face == null)
+            if(faceReference == null)
             {
                 return false;
             }
-            var divideSurface = Autodesk.Revit.DB.DividedSurface.Create(_doc, face.Reference);
+            var divideSurface = Autodesk.Revit.DB.DividedSurface.Create(_doc, faceReference);
+            _selectedRef = new Reference(divideSurface);
             var result = SetDividedSurfaceParameters(divideSurface, facadeData);
             return result;
         }
@@ -113,10 +124,19 @@ namespace AiCorb.RevitServices
             var distanceMm = AiCorbSettings.Panel_Height;
             
             var distanceU = UnitUtils.ConvertToInternalUnits(distanceMm, UnitTypeId.Millimeters);
-            surfaceRuleU.SetLayoutFixedDistance(distanceU, SpacingRuleJustification.Center, 0,0);
+            surfaceRuleU.SetLayoutFixedDistance(distanceU, SpacingRuleJustification.Beginning, 0,0);
             surfaceRuleV.SetLayoutFixedDistance(CalculateDistanceV(facadeData,distanceMm), SpacingRuleJustification.Center, 0,0);
             return false;
         }
-        
+
+        private FamilySymbol TilePatternByName(string name)  
+        {
+            var curtainPanel = new FilteredElementCollector(_doc).OfCategory(BuiltInCategory.OST_CurtainWallPanels)
+                .OfClass(typeof(FamilySymbol)).WhereElementIsElementType().ToElements()
+                .SingleOrDefault(element => element.Name == name) as FamilySymbol;
+
+            MessageBox.Show(curtainPanel.Name);
+            return curtainPanel;
+        }
     }
 }
