@@ -105,10 +105,10 @@
                 <StackPanel>
                     <StackPanel  Margin="10">
                         <StackPanel Orientation="Horizontal"  >
-                            <Button Margin="10" Width="105">Select Face</Button>
+                            <Button Margin="10" Width="105" Command="{Binding SelectFaceCommand}">Select Face</Button>
                             <TextBlock VerticalAlignment="Center">id:</TextBlock>
-                            <TextBlock Width="110" VerticalAlignment="Center"></TextBlock>
-                            <Button Margin="10" Width="105">Apply</Button>
+                            <TextBlock Width="110" VerticalAlignment="Center" Text="{Binding SelectedRevitFaceId}"></TextBlock>
+                            <Button Margin="10" Width="105" Command="{Binding ApplyCommand}" Visibility="{Binding ApplyButtonVisibility}">Apply</Button>
                         </StackPanel>
                     <StackPanel>
                         

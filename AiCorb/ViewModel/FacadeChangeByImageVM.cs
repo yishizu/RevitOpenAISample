@@ -11,14 +11,20 @@ using System.Windows.Media.Imaging;
 using MaterialDesignColors;
 using AiCorb.Commands;
 using AiCorb.Models;
+using AiCorb.RevitServices;
 using AiCorb.Utils;
 using AiCorb.Views;
+using Autodesk.Revit.DB;
+using Autodesk.Revit.UI;
 using MaterialDesignThemes.Wpf;
+using Visibility = System.Windows.Visibility;
 
 namespace AiCorb.ViewModel
 {
     public class FacadeChangeByImageVM : INotifyPropertyChanged
     {
+        private FacadeManagementService _facadeManagementService;
+        
         private object _selectedItem;
         public object SelectedItem
         {
@@ -28,9 +34,22 @@ namespace AiCorb.ViewModel
                 _selectedItem = value;
                 NotifyPropertyChanged(nameof(SelectedItem));
                 NotifyPropertyChanged(nameof(EditButtonVisibility));
+                NotifyPropertyChanged(nameof(ApplyButtonVisibility));
+            }
+        }
+        private ElementId _selectedRevitFaceId;
+        public ElementId SelectedRevitFaceId
+        {
+            get => _selectedRevitFaceId;
+            set
+            {
+                _selectedRevitFaceId = value;
+                NotifyPropertyChanged(nameof(SelectedRevitFaceId));
+                NotifyPropertyChanged(nameof(ApplyButtonVisibility));
             }
         }
         public Visibility EditButtonVisibility => SelectedItem != null ? Visibility.Visible : Visibility.Collapsed;
+        public Visibility ApplyButtonVisibility => SelectedItem != null && SelectedRevitFaceId!=null? Visibility.Visible : Visibility.Collapsed;
         private ObservableCollection<FacadeData> _facadeDataCollection;
         public ObservableCollection<FacadeData> FacadeDataCollection
         {
@@ -130,13 +149,35 @@ namespace AiCorb.ViewModel
             var result = await DialogHost.Show(alertDialogView,"FacadeChangeByImageDialogHost");
         }
         #endregion
-        
-        public FacadeChangeByImageVM()
+
+        #region SelectFacadeCommand
+        public ICommand SelectFaceCommand { get; }
+        void SelectFaceExecute(object parameter)
         {
+            var selectedRef = _facadeManagementService.SelectFace();
+            if(selectedRef!=null) SelectedRevitFaceId = selectedRef.ElementId;
+            //if(SelectedRevitFaceId!=null) MessageBox.Show("SelectedRevitFaceId: "+SelectedRevitFaceId.ToString());
+        }
+        #endregion
+        
+        #region ApplyCommand
+        public ICommand ApplyCommand { get; }
+        void ApplyExecute(object parameter)
+        {
+            _facadeManagementService.SetDivideFacade(SelectedItem as FacadeData);
+            
+        }
+        #endregion
+        
+        public FacadeChangeByImageVM(UIDocument uidoc)
+        {
+            _facadeManagementService = new FacadeManagementService(uidoc);
             EditCommand = new RelayCommand(EditExecute, CanEditExecute);
             DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
             DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);
             CreateNewCommand = new RelayCommand(CreateNewExecute);
+            SelectFaceCommand = new RelayCommand(SelectFaceExecute);
+            ApplyCommand = new RelayCommand(ApplyExecute);
             FacadeDataCollection =LoadFacadeDataFromJson();
         }
 
@@ -165,6 +206,6 @@ namespace AiCorb.ViewModel
                 PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
-       
+        
     }
 }

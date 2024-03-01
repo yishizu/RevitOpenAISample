@@ -60,6 +60,7 @@ namespace AiCorb.Models
         {
             get
             {
+                if(CroppedImagePath == null) return null;
                 var bitmap = new BitmapImage();
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri(CroppedImagePath, UriKind.Absolute);
@@ -101,6 +102,7 @@ namespace AiCorb.Models
         {
             get
             {
+                if(RevitImagePath == null) return null;
                 var bitmap = new BitmapImage();
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri(RevitImagePath, UriKind.Absolute);

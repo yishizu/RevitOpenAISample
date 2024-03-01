@@ -21,7 +21,7 @@ namespace AiCorb.Commands
             {
                 var uiApp = commandData.Application;
                 var uiDoc = uiApp.ActiveUIDocument;
-                var vm = new FacadeChangeByImageVM();
+                var vm = new FacadeChangeByImageVM(uiDoc);
                 var assemblyPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
                 var imagePath = System.IO.Path.Combine(assemblyPath, "Resources", "images", "facade1.jpg");
                 var imagePath2 = System.IO.Path.Combine(assemblyPath, "Resources", "images", "revit.png");

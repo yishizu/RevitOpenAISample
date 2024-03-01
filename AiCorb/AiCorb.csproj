@@ -121,9 +121,11 @@ goto exit
         <Compile Include="Data\ParamsData.cs" />
         <Compile Include="Models\FacadeData.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="RevitServices\FacadeManagementService.cs" />
         <Compile Include="Utils\AiCorbSettings.cs" />
         <Compile Include="Utils\AssemblyLoader.cs" />
         <Compile Include="Utils\ImagePathToBitmapConverter.cs" />
+        <Compile Include="Utils\RevitUtils.cs" />
         <Compile Include="ViewModel\AlertDialogModelView.cs" />
         <Compile Include="ViewModel\CreateNewFacadeDataViewModel.cs" />
         <Compile Include="ViewModel\DesignTimeViewModel.cs" />
