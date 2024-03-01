@@ -1,5 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Windows.Media.Imaging;
 using AiCorb.Models;
 
 namespace AiCorb.ViewModel
@@ -27,6 +29,7 @@ namespace AiCorb.ViewModel
                 NotifyPropertyChanged(nameof(FacadeData));
             }
         }
+        
         public ObservableCollection<FacadeData> FacadeDataCollection { get; set; }
 
         public DesignTimeViewModel()

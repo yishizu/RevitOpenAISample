@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Net.Http;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -9,16 +10,17 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
 using AiCorb.Commands;
+using AiCorb.Data;
 using AiCorb.Models;
+using AiCorb.Utils;
 using MaterialDesignThemes.Wpf;
+using Newtonsoft.Json;
 
 namespace AiCorb.ViewModel
 {
     public class CreateNewFacadeDataViewModel :INotifyPropertyChanged
     {
-        string url = "https://modeler.aicorb.com/dev/dtype";
-        string url2 = "https://modeler.aicorb.com/dev/param";
-        string apiKey = "F2mChnT4wr8MwjnVu0w2620zxEkCZVcX3CLxN5Gd"; 
+        
         
         private string _croppedImagePath;
 
@@ -99,14 +101,13 @@ namespace AiCorb.ViewModel
         {
             FacadeDataCollection.Add(FacadeData);
             FacadeData.CopyImage(OriginalImagePath, CroppedImagePath);
-            PostImage(FacadeData.CroppedImagePath, url, apiKey);
+            PostImage(FacadeData.CroppedImagePath);
             FacadeData.SaveFacadeData();
             DialogHost.CloseDialogCommand.Execute(null, null);
         }
         public ICommand LoadImageCommand { get; private set; }
         private void LoadImage(object parameter)
         {
-            // 画像を読み込む処理
             MessageBox.Show("画像を読み込みます。");
             var openFileDialog = new Microsoft.Win32.OpenFileDialog
             {
@@ -130,13 +131,13 @@ namespace AiCorb.ViewModel
             // 画像をリセットする処理
             MessageBox.Show("画像をリセットします。");
         }
-        private void PostImage(string imagePath, string url, string apiKey)
+        private void PostImage(string facadeDataCroppedImagePath)
         {
             try
             {
                 Task.Run(async () =>
                 {
-                    await PostImageAsync(imagePath, url, apiKey);
+                    await PostImageAsync(facadeDataCroppedImagePath,AiCorbSettings.DtypeUrl,AiCorbSettings.ParamUrl, AiCorbSettings.ApiKey);
                 }).Wait();
                 
             }
@@ -145,19 +146,41 @@ namespace AiCorb.ViewModel
                 MessageBox.Show(ex.Message);
             }
         }
-        private async Task PostImageAsync(string imagePath, string url, string apiKey)
+        private async Task PostImageAsync(string imagePath, string dype_url,string param_url, string apiKey)
+        {
+            var stringContent = "{\r\n \"img\": \" " + Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath))  + "\"\r\n}";
+            var responseStringDtype = await PostAsync(dype_url, apiKey, stringContent);
+            var dtypeData = JsonConvert.DeserializeObject<DTypeData>(responseStringDtype);
+            var dtype = dtypeData.DType.FirstOrDefault();
+            //var dtype = "isolated_window";
+            var stringContent2 = "{\n" + 
+                                 "\"dtype\": \"" + dtype + "\",\n" + 
+                                 "\"img\": \"" + Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath)) + "\"\n" + 
+                                 "}";
+            var responseStringParam = await PostAsync(param_url, apiKey, stringContent2);
+            var paramData = JsonConvert.DeserializeObject<ParamsData>(responseStringParam);
+            SetFacadeData(dtype, paramData);
+            System.Windows.MessageBox.Show(responseStringParam);
+        }
+        private async Task<string> PostAsync(string url, string apiKey, string stringContent)
         {
             var client = new HttpClient();
             var request = new HttpRequestMessage(HttpMethod.Post, url);
             request.Headers.Add("x-api-key", apiKey);
-            string base64Image = Convert.ToBase64String(System.IO.File.ReadAllBytes(imagePath));
-            var stringContent = "{\r\n \"img\": \" " + base64Image + "\"\r\n}";
             request.Content = new StringContent(stringContent, null, "text/plain");
             var response = await client.SendAsync(request);
             response.EnsureSuccessStatusCode();
             string responseString = await response.Content.ReadAsStringAsync();
-       
-            System.Windows.MessageBox.Show(responseString);
+            return responseString;
+        }
+        
+        private void SetFacadeData(string dtyp, ParamsData paramData)
+        {
+            FacadeData.CurtainPanelType = dtyp;
+            FacadeData.WindowDepth = paramData.Params.WindowDepth;
+            FacadeData.FrameThicknessRatioU = paramData.Params.FrameThicknessRatio;
+            FacadeData.WindowAspectRatio = paramData.Params.WindowAspectRatio;
+            FacadeData.PanelAspectRatio = paramData.Params.PanelAspectRatio;
         }
         
      

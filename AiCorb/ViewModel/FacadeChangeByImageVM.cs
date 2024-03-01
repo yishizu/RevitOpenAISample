@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
@@ -6,6 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media.Imaging;
 using MaterialDesignColors;
 using AiCorb.Commands;
 using AiCorb.Models;
@@ -40,6 +42,20 @@ namespace AiCorb.ViewModel
                     _facadeDataCollection = value;
                     NotifyPropertyChanged(nameof(FacadeDataCollection));
                 }
+            }
+        }
+        public BitmapImage CroppedImageSource
+        {
+            get
+            {
+                var bitmap = new BitmapImage();
+                var CroppedImagePath = (SelectedItem as FacadeData).CroppedImagePath;
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(CroppedImagePath, UriKind.Absolute);
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
+                return bitmap;
             }
         }
         #region CreateNewCommand

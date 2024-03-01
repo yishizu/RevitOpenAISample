@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.IO;
 using System.Runtime.CompilerServices;
+using System.Windows.Media.Imaging;
 using AiCorb.Utils;
 using Autodesk.Revit.DB;
 using Autodesk.Revit.UI;
@@ -55,6 +56,19 @@ namespace AiCorb.Models
                 }
             }
         }
+        public BitmapImage CroppedImageSource
+        {
+            get
+            {
+                var bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(CroppedImagePath, UriKind.Absolute);
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
+                return bitmap;
+            }
+        }
         private string _originalImagePath;
 
         public string OriginalImagePath
@@ -83,7 +97,19 @@ namespace AiCorb.Models
                 }
             }
         }
-        
+        public BitmapImage RevitImageSource
+        {
+            get
+            {
+                var bitmap = new BitmapImage();
+                bitmap.BeginInit();
+                bitmap.UriSource = new Uri(RevitImagePath, UriKind.Absolute);
+                bitmap.CacheOption = BitmapCacheOption.OnLoad;
+                bitmap.EndInit();
+                bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
+                return bitmap;
+            }
+        }
         private double _panelAspectRatio;
 
         public double PanelAspectRatio
