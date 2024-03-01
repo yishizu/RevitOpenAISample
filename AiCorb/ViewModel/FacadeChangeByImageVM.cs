@@ -25,6 +25,7 @@ namespace AiCorb.ViewModel
     public class FacadeChangeByImageVM : INotifyPropertyChanged
     {
         private FacadeManagementService _facadeManagementService;
+        public AiCorbMainPage _view;
         
         private object _selectedItem;
         public object SelectedItem
@@ -157,6 +158,7 @@ namespace AiCorb.ViewModel
         {
             var selectedRef = _facadeManagementService.SelectFace();
             if(selectedRef!=null) SelectedRevitFaceId = selectedRef.ElementId;
+            _view.Focus();
             //if(SelectedRevitFaceId!=null) MessageBox.Show("SelectedRevitFaceId: "+SelectedRevitFaceId.ToString());
         }
         #endregion

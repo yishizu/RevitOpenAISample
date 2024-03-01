@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using System.Xml.Serialization.Configuration;
 using AiCorb.Models;
 using AiCorb.Utils;
 using AiCorb.ViewModel;
@@ -50,6 +51,7 @@ namespace AiCorb.Commands
                 var test = new AiCorbMainPage(uiDoc, vm);
                 {
                 };
+                vm._view = test;
                 test.Show();
             }
 
