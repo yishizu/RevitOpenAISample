@@ -25,6 +25,7 @@ namespace AiCorb.ViewModel
     public class FacadeChangeByImageVM : INotifyPropertyChanged
     {
         private FacadeManagementService _facadeManagementService;
+        private List<Element> _familySymbols;
         public AiCorbMainPage _view;
         
         private object _selectedItem;
@@ -171,13 +172,15 @@ namespace AiCorb.ViewModel
         void ApplyExecute(object parameter)
         {
             _setDivideFacadeEventHandler._facadeData = SelectedItem as FacadeData;
+            _facadeManagementService.GetFamilySymbols();
             setDivideFacadeEvent?.Raise();
         }
         #endregion
         
-        public FacadeChangeByImageVM(UIDocument uidoc)
+        public FacadeChangeByImageVM(UIDocument uidoc, List<Element> familySymbols)
         {
-            _facadeManagementService = new FacadeManagementService(uidoc);
+            _familySymbols = familySymbols;
+            _facadeManagementService = new FacadeManagementService(uidoc, familySymbols);
             _setDivideFacadeEventHandler = new SetDivideFacadeEventHandler(_facadeManagementService);
             setDivideFacadeEvent = ExternalEvent.Create(_setDivideFacadeEventHandler);
             EditCommand = new RelayCommand(EditExecute, CanEditExecute);
