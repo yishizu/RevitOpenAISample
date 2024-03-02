@@ -161,7 +161,7 @@ namespace AiCorb.RevitServices
 
         private void ChangeType(FacadeData facadeData, DividedSurface dividedSurface)
         {
-            
+            /*
             foreach (var f in _familySymbols)
             {
                 MessageBox.Show(f.Name);
@@ -169,18 +169,14 @@ namespace AiCorb.RevitServices
             if (_familySymbols.Count == 0)
             {
                 MessageBox.Show("No family symbols found");
-            }
+            }*/
 
             var panelType = _familySymbols.SingleOrDefault(f => f.Name == facadeData.CurtainPanelType) as FamilySymbol;
             if (panelType == null)
             {
                 panelType = _familySymbols[0] as FamilySymbol;
             }
-
-            if(_familySymbols.Count == 0)
-            {
-                MessageBox.Show("No family symbols found");
-            }
+            
             var newTypeName = facadeData.CurtainPanelType + "_" + facadeData.Id;
             var newType = _familySymbols.SingleOrDefault(f=>f.Name == newTypeName) as FamilySymbol;
             if(newType == null)
@@ -220,15 +216,19 @@ namespace AiCorb.RevitServices
 
         public void DeleteTypeByFacadeData(FacadeData facadeData)
         {
+            var familySymbol = _familySymbols.SingleOrDefault(f => f.Name == facadeData.CurtainPanelType + "_" + facadeData.Id) as FamilySymbol;
+            
+            if(familySymbol == null)
+            {
+                //MessageBox.Show("No family symbol found to delete");
+                return;
+            }
             using (Transaction transaction = new Transaction(_doc, "Delete Type"))
             {
                 transaction.Start();
-                var familySymbol = _familySymbols.SingleOrDefault(f => f.Name == facadeData.CurtainPanelType + "_" + facadeData.Id) as FamilySymbol;
-                if (familySymbol != null)
-                {
-                    DeleteType(familySymbol);
-                    transaction.Commit();
-                }
+
+                DeleteType(familySymbol);
+                transaction.Commit();
             }
             
         }
@@ -236,6 +236,12 @@ namespace AiCorb.RevitServices
         private void DeleteType(FamilySymbol familySymbol)
         {
             _doc.Delete(familySymbol.Id);
+        }
+
+        //TODO: Implement this method
+        private void TakeScreenShot()
+        {
+            
         }
     }
 }
