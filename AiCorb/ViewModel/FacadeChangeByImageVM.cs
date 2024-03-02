@@ -189,6 +189,7 @@ namespace AiCorb.ViewModel
             _setDivideFacadeEventHandler._facadeData = SelectedItem as FacadeData;
             _facadeManagementService.GetFamilySymbols();
             setDivideFacadeEvent?.Raise();
+            
         }
         #endregion
         

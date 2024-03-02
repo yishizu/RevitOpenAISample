@@ -100,7 +100,7 @@ namespace AiCorb.ViewModel
         private void CreateData(object parameter)
         {
             FacadeDataCollection.Add(FacadeData);
-            FacadeData.CopyImage(OriginalImagePath, CroppedImagePath);
+            FacadeData.CopyImage(OriginalImagePath);
             PostImage(FacadeData.CroppedImagePath);
             FacadeData.SaveFacadeData();
             DialogHost.CloseDialogCommand.Execute(null, null);

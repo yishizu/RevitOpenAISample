@@ -84,7 +84,7 @@ namespace AiCorb.ViewModel
         {
             FacadeDataCollection.Remove(FacadeData);
             FacadeData.DeleteFacadeData();
-            _facadeManagementService.DeleteTypeByFacadeData(FacadeData);
+            //_facadeManagementService.DeleteTypeByFacadeData(FacadeData);
             DialogHost.CloseDialogCommand.Execute(null, null);
             
         }

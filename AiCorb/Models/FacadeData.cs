@@ -14,6 +14,9 @@ namespace AiCorb.Models
     
     public class FacadeData: INotifyPropertyChanged
     {
+        private string _croppedImageName = "croppedImage.jpg";
+        private string _originalImageName = "originalImage.jpg";
+        private string _revitImageName = "revitScreen.jpg";
         private const double TOLERANCE = 0.0001;
        private static string savePath = AiCorbSettings.SAVE_PATH;
         private string _name;
@@ -52,22 +55,26 @@ namespace AiCorb.Models
                 if(_croppedImagePath != value)
                 {
                     _croppedImagePath = value;
+                    CroppedImageSource = CreateBitmapImage(CroppedImagePath);
                     OnPropertyChanged(nameof(CroppedImagePath));
+                    
                 }
             }
         }
+      
+        
+        private BitmapImage _croppedImageSource;
+        [JsonIgnore]
         public BitmapImage CroppedImageSource
         {
-            get
+            get => _croppedImageSource;
+            set
             {
-                if(CroppedImagePath == null) return null;
-                var bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(CroppedImagePath, UriKind.Absolute);
-                bitmap.CacheOption = BitmapCacheOption.OnLoad;
-                bitmap.EndInit();
-                bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
-                return bitmap;
+                if(_croppedImageSource != value)
+                {
+                    _croppedImageSource = value;
+                    OnPropertyChanged(nameof(CroppedImageSource));
+                }
             }
         }
         private string _originalImagePath;
@@ -94,23 +101,27 @@ namespace AiCorb.Models
                 if(_revitImagePath != value)
                 {
                     _revitImagePath = value;
+                    RevitImageSource = CreateBitmapImage(RevitImagePath);
                     OnPropertyChanged(nameof(RevitImagePath));
+                   
                 }
             }
         }
+        
+        private BitmapImage _revitImageSource;
+        [JsonIgnore]
         public BitmapImage RevitImageSource
         {
-            get
+            get => _revitImageSource;
+            set
             {
-                if(RevitImagePath == null) return null;
-                var bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(RevitImagePath, UriKind.Absolute);
-                bitmap.CacheOption = BitmapCacheOption.OnLoad;
-                bitmap.EndInit();
-                bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
-                return bitmap;
+                if(_revitImageSource != value)
+                {
+                    _revitImageSource = value;
+                    OnPropertyChanged(nameof(RevitImageSource));
+                }
             }
+            
         }
         private double _panelAspectRatio;
 
@@ -222,6 +233,10 @@ namespace AiCorb.Models
         {
             Name = name;
             Id = System.Guid.NewGuid().ToString();
+            var directoryPath = Path.Combine(savePath, Id);
+            CroppedImagePath = Path.Combine(directoryPath, _croppedImageName);
+            OriginalImagePath = Path.Combine(directoryPath, _originalImageName);
+            RevitImagePath = Path.Combine(directoryPath, _revitImageName);
         }
 
         public FacadeData DuplicatedFacadeData( string name)
@@ -239,8 +254,21 @@ namespace AiCorb.Models
             newFacadeData.PanelHeight = this.PanelHeight;
             
             return newFacadeData;
-        }   
+        }
 
+        BitmapImage CreateBitmapImage(string filePath)
+        {
+            if(filePath == null) return null;
+            if(File.Exists(filePath) == false) return null;
+            var bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.CacheOption = BitmapCacheOption.OnLoad; // キャッシュをバイパス
+            bitmap.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+            bitmap.UriSource = new Uri(filePath, UriKind.Absolute);
+            bitmap.EndInit();
+            bitmap.Freeze(); // UIスレッド以外で使用する場合に必要
+            return bitmap;
+        }
 
         private double CalculateFrameThicknessRatioV(double frameThicknessRatioU, double panelAspectRatio,double windowAspectRatio)
         {
@@ -261,9 +289,9 @@ namespace AiCorb.Models
                 File.WriteAllText(jsonPath, jsonData);
 
                 // 画像ファイルをコピー
-                CopyImageFile(this.CroppedImagePath, Path.Combine(directoryPath, "croppedImage.jpg"));
-                CopyImageFile(this.OriginalImagePath, Path.Combine(directoryPath, "originalImage.jpg"));
-                CopyImageFile(this.RevitImagePath, Path.Combine(directoryPath, "revitScreen.jpg"));
+                CopyImageFile(this.CroppedImagePath, Path.Combine(directoryPath, _croppedImageName));
+                CopyImageFile(this.OriginalImagePath, Path.Combine(directoryPath, _originalImageName));
+                CopyImageFile(this.RevitImagePath, Path.Combine(directoryPath, _revitImageName));
             }
             catch (Exception ex)
             {
@@ -288,19 +316,20 @@ namespace AiCorb.Models
         {
             return JsonConvert.DeserializeObject<FacadeData>(json);
         }
-        public void CopyImage(string sourceImagePath, string croppedImagePath)
+        public void CopyImage(string sourceImagePath)
         {
             var destinationImageDir = Path.Combine(savePath, Id);
             if (!Directory.Exists(destinationImageDir))
             {
                 Directory.CreateDirectory(destinationImageDir);
             }
-            var destinationImagePath = Path.Combine(destinationImageDir,"croppedImage.jpg");
+            var destinationImagePath = CroppedImagePath;
             if (!string.IsNullOrEmpty(sourceImagePath) && File.Exists(sourceImagePath))
             {
                 File.Copy(sourceImagePath, destinationImagePath, true);
             }
             OriginalImagePath = sourceImagePath;
+            CroppedImagePath = "";
             CroppedImagePath = destinationImagePath;
         }
         public event PropertyChangedEventHandler PropertyChanged;
