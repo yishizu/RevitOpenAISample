@@ -217,5 +217,25 @@ namespace AiCorb.RevitServices
                 
             }
         }
+
+        public void DeleteTypeByFacadeData(FacadeData facadeData)
+        {
+            using (Transaction transaction = new Transaction(_doc, "Delete Type"))
+            {
+                transaction.Start();
+                var familySymbol = _familySymbols.SingleOrDefault(f => f.Name == facadeData.CurtainPanelType + "_" + facadeData.Id) as FamilySymbol;
+                if (familySymbol != null)
+                {
+                    DeleteType(familySymbol);
+                    transaction.Commit();
+                }
+            }
+            
+        }
+        
+        private void DeleteType(FamilySymbol familySymbol)
+        {
+            _doc.Delete(familySymbol.Id);
+        }
     }
 }

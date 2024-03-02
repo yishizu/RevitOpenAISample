@@ -80,6 +80,21 @@ namespace AiCorb.ViewModel
                 return bitmap;
             }
         }
+        public FacadeChangeByImageVM(UIDocument uidoc, List<Element> familySymbols)
+        {
+            _familySymbols = familySymbols;
+            _facadeManagementService = new FacadeManagementService(uidoc, familySymbols);
+            _setDivideFacadeEventHandler = new SetDivideFacadeEventHandler(_facadeManagementService);
+            setDivideFacadeEvent = ExternalEvent.Create(_setDivideFacadeEventHandler);
+            EditCommand = new RelayCommand(EditExecute, CanEditExecute);
+            DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
+            DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);
+            CreateNewCommand = new RelayCommand(CreateNewExecute);
+            SelectFaceCommand = new RelayCommand(SelectFaceExecute);
+            ApplyCommand = new RelayCommand(ApplyExecute);
+            FacadeDataCollection =LoadFacadeDataFromJson();
+        }
+        
         #region CreateNewCommand
 
         public ICommand CreateNewCommand { get; }
@@ -147,7 +162,7 @@ namespace AiCorb.ViewModel
         private async Task ShowDeleteDialog()
         {
             var selectedFacadeData = SelectedItem as FacadeData;
-            var alertViewModel = new AlertDialogModelView(selectedFacadeData, FacadeDataCollection,"Delete","Are you sure you want to delete this item?");
+            var alertViewModel = new AlertDialogModelView(_facadeManagementService,selectedFacadeData, FacadeDataCollection,"Delete","Are you sure you want to delete this item?");
             var alertDialogView = new  AlertDialogView() { DataContext = alertViewModel };
             var result = await DialogHost.Show(alertDialogView,"FacadeChangeByImageDialogHost");
         }
@@ -177,20 +192,7 @@ namespace AiCorb.ViewModel
         }
         #endregion
         
-        public FacadeChangeByImageVM(UIDocument uidoc, List<Element> familySymbols)
-        {
-            _familySymbols = familySymbols;
-            _facadeManagementService = new FacadeManagementService(uidoc, familySymbols);
-            _setDivideFacadeEventHandler = new SetDivideFacadeEventHandler(_facadeManagementService);
-            setDivideFacadeEvent = ExternalEvent.Create(_setDivideFacadeEventHandler);
-            EditCommand = new RelayCommand(EditExecute, CanEditExecute);
-            DuplicateCommand = new RelayCommand(DuplicateExecute, CanEditExecute);
-            DeleteCommand = new RelayCommand(DeleteExecute, CanEditExecute);
-            CreateNewCommand = new RelayCommand(CreateNewExecute);
-            SelectFaceCommand = new RelayCommand(SelectFaceExecute);
-            ApplyCommand = new RelayCommand(ApplyExecute);
-            FacadeDataCollection =LoadFacadeDataFromJson();
-        }
+        
 
         private ObservableCollection<FacadeData> LoadFacadeDataFromJson()
         {

@@ -3,12 +3,14 @@ using System.ComponentModel;
 using System.Windows.Input;
 using AiCorb.Commands;
 using AiCorb.Models;
+using AiCorb.RevitServices;
 using MaterialDesignThemes.Wpf;
 
 namespace AiCorb.ViewModel
 {
     public class AlertDialogModelView
     {
+        private FacadeManagementService _facadeManagementService;
         private string _message;
         public string Message
         {
@@ -60,8 +62,9 @@ namespace AiCorb.ViewModel
         }
         
         public ICommand OKCommand { get; private set; }
-        public AlertDialogModelView(FacadeData selectedItem, ObservableCollection<FacadeData> facadeDataCollection, string title, string message)
+        public AlertDialogModelView(FacadeManagementService facadeManagementService,FacadeData selectedItem, ObservableCollection<FacadeData> facadeDataCollection, string title, string message)
         {
+            _facadeManagementService = facadeManagementService;
             Title = title;
             Message = message;
             FacadeData = selectedItem;
@@ -81,6 +84,7 @@ namespace AiCorb.ViewModel
         {
             FacadeDataCollection.Remove(FacadeData);
             FacadeData.DeleteFacadeData();
+            _facadeManagementService.DeleteTypeByFacadeData(FacadeData);
             DialogHost.CloseDialogCommand.Execute(null, null);
             
         }
