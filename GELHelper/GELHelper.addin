@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>GELHelper</Name>
+    <Assembly>GEL\GELHelper.dll</Assembly>
+    <AddInId>97842953-BB61-4080-A4A6-E115AC7AE10C</AddInId>
+    <FullClassName>GELHelper.App</FullClassName>
+    <VendorId>GEL</VendorId>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <VendorDescription>https://geometryengineeringlab.tech/</VendorDescription>
+  </AddIn>
+</RevitAddIns>

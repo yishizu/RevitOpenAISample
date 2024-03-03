@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1f2225d5-e09e-4524-8300-59d52351733f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/aws.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/AiCorb/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb.sln.DotSettings.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/AiCorb.addin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/AiCorb.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/App.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/App.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/ApiTestCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/FacadeChangeByImage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/HelloWorldCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/RelayCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Data/DTypeData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Data/ParamsData.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ExternalEventHandler/SetDivideFacadeEventHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Models/FacadeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/Models/FacadeData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/__icon_16x16_resaved.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/api-32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/hello-16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/innovation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/facade1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/facade2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/revit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/RevitServices/FacadeManagementService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/AiCorbSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/AssemblyLoader.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/ImagePathToBitmapConverter.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/RevitUtils.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/AlertDialogModelView.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/CreateNewFacadeDataViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/DesignTimeViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/DuplicateDialogViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/EditDialogViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/FacadeChangeByImageVM.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AiCorbMainPage.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AiCorbMainPage.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AlertDialogView.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AlertDialogView.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/CreateNewFacadeDataView.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/CreateNewFacadeDataView.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/DuplicateDialogView.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/DuplicateDialogView.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/EditDialogView.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/EditDialogView.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/MyWindow.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/MyWindow.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/UserControl2.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/Views/UserControl2.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.addin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.dll.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignColors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignColors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/icons/innovation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/facade1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/facade2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/revit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.ApplicationModel.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Data.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Devices.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Foundation.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Gaming.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Globalization.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Graphics.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Management.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Media.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Networking.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Perception.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Security.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Services.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Storage.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.System.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.UI.Xaml.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.UI.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Web.winmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.g.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb_MarkupCompile.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb_MarkupCompile.lref" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/GeneratedInternalTypeHelper.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataFromImage.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataFromImage.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/Dialog.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/Dialog.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialog.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialog.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/GeneralDialogView.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/GeneralDialogView.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/MyWindow.baml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.g.i.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AiCorb/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/ribbon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/window1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/window2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/window3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/HelpLibraryManagerLauncher.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Install_Revit WPF Template Documentation.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Remove_Revit WPF Template Documentation.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.chm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.msha" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.mshc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/SearchHelp.aspx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/Web.Config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/WebKI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/WebTOC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/Help/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/RefactorInstructions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/RevitTemplate.shfbproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/Autodesk.Revit.SDK.2022.0.2.392.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/Revit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/AdWindows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIBrowserUtils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIFoundation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIIFC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIIFC.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPILink.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacros.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacros.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacrosInterop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacrosInteropAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPISteel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUI.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUILink.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacros.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacros.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacrosInterop.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacrosInteropAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAddInUtility.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAddInUtility.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitDB.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitDBAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitNET.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitUI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitUIAPI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/MaterialDesignColors.3.0.0-ci484.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/images/MaterialDesignColors.Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net462/MaterialDesignColors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net462/MaterialDesignColors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net6.0/MaterialDesignColors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net6.0/MaterialDesignColors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net7.0/MaterialDesignColors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net7.0/MaterialDesignColors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/MaterialDesignThemes.5.0.0-ci484.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/MaterialDesignThemes.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-MediumItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Thin.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-ThinItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/images/MaterialDesignThemes.Icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/tools/VisualStudioToolsManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/Microsoft.Xaml.Behaviors.Wpf.1.1.39.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Design/Microsoft.Xaml.Behaviors.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Design/Microsoft.Xaml.Behaviors.DesignTools.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/tools/Install.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/.signature.p7s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/Newtonsoft.Json.13.0.3.nupkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/packageIcon.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2dAicID1VGT1Nc7DuO7Z8KEH6ut" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Executable.Revit2024.executor": "Debug",
+    ".NET Executable.Unnamed.executor": "Debug",
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\ykish\\AppData\\Local\\Symbols\\src"
+    ]
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Revit2024" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Autodesk/Revit 2024/Revit.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Program Files/Autodesk/Revit 2024" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f2225d5-e09e-4524-8300-59d52351733f" name="Changes" comment="" />
+      <created>1709457362568</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1709457362568</updated>
+      <workItem from="1709457385030" duration="562000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
