@@ -166,11 +166,9 @@ xcopy "$(TargetDir)GELHelper.addin" "%PROGRAMDATA%\Autodesk\Revit\Addins\2024" /
         <Compile Include="Data\FunctionManager.cs" />
         <Compile Include="ExternalEventHandler\RevitEventHandler.cs" />
         <Compile Include="ExternalEventHandler\SendMessageEventHandler.cs" />
-        <Compile Include="ExternalEventHandler\SetDivideFacadeEventHandler.cs" />
         <Compile Include="Models\FacadeData.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="RevitFunctions\RevitFunctionManager.cs" />
-        <Compile Include="RevitServices\FacadeManagementService.cs" />
         <Compile Include="Utils\GELSettings.cs" />
         <Compile Include="Utils\AssemblyLoader.cs" />
         <Compile Include="Utils\ImagePathToBitmapConverter.cs" />
@@ -216,6 +214,7 @@ xcopy "$(TargetDir)GELHelper.addin" "%PROGRAMDATA%\Autodesk\Revit\Addins\2024" /
     </ItemGroup>
     <ItemGroup>
       <Folder Include="RevitFunctions\Functions\" />
+      <Folder Include="RevitServices\" />
       <Folder Include="ViewModel\" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
