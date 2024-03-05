@@ -27,18 +27,23 @@ namespace GELHelper
            
             RibbonPanel ribbonPanel = application.CreateRibbonPanel( _apptab,_panelName);
             string thisAssemblyPath = Assembly.GetExecutingAssembly().Location;
-            PushButtonData buttonData = new PushButtonData("HelloWorldCommand",
-                "HelloWorldCommand", thisAssemblyPath, "GELHelper.Commands.HelloWorldCommand");
-            PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
-            if (pushButton != null)
-            {
-                pushButton.ToolTip = "HelloWorldCommand.";
-                pushButton.LargeImage =PngImageSource( "GELHelper.Resources.icons.innovation.png");
-            }
-            
+            CreatePushButton(thisAssemblyPath, ribbonPanel, "HelloWorldCommand", "GELHelper.Commands.HelloWorldCommand","GELHelper.Resources.icons.innovation.png");
+            CreatePushButton(thisAssemblyPath, ribbonPanel, "AskEasyTasksCommand", "GELHelper.Commands.AskEasyTasksCommand","GELHelper.Resources.icons.innovation.png");
             return Result.Succeeded;
         }
 
+        void CreatePushButton(string thisAssemblyPath, RibbonPanel ribbonPanel, string commandName, string className, string iconPath = "")
+        {
+            PushButtonData buttonData = new PushButtonData(commandName,
+                commandName, thisAssemblyPath, className);
+            PushButton pushButton = ribbonPanel.AddItem(buttonData) as PushButton;
+            if (pushButton != null)
+            {
+                pushButton.ToolTip = commandName;
+                pushButton.LargeImage =PngImageSource( iconPath);
+            }
+        }   
+       
         public Result OnShutdown(UIControlledApplication application)
         {
             return Result.Succeeded;

@@ -1,265 +1,363 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1f2225d5-e09e-4524-8300-59d52351733f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/aws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AiCorb/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/AiCorb/v16/.suo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb.sln" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb.sln.DotSettings.user" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/AiCorb.addin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/AiCorb.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/App.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/App.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/ApiTestCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/FacadeChangeByImage.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/HelloWorldCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Commands/RelayCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Data/DTypeData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Data/ParamsData.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ExternalEventHandler/SetDivideFacadeEventHandler.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Models/FacadeData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/Models/FacadeData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/__icon_16x16_resaved.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/api-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/hello-16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/icons/innovation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/facade1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/facade2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Resources/images/revit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/RevitServices/FacadeManagementService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/AiCorbSettings.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/AssemblyLoader.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/ImagePathToBitmapConverter.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Utils/RevitUtils.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/AlertDialogModelView.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/CreateNewFacadeDataViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/DesignTimeViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/DuplicateDialogViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/EditDialogViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/ViewModel/FacadeChangeByImageVM.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AiCorbMainPage.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AiCorbMainPage.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AlertDialogView.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/AlertDialogView.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/CreateNewFacadeDataView.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/CreateNewFacadeDataView.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/DuplicateDialogView.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/DuplicateDialogView.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/EditDialogView.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/EditDialogView.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/MyWindow.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/MyWindow.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/UserControl2.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/Views/UserControl2.xaml.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.addin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.dll.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/AiCorb.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignColors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignColors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/icons/innovation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/facade1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/facade2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Resources/images/revit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.ApplicationModel.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Data.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Devices.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Foundation.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Gaming.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Globalization.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Graphics.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Management.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Media.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Networking.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Perception.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Security.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Services.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Storage.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.System.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.UI.Xaml.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.UI.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/bin/Debug2022/Windows.Web.winmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.g.resources" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb_MarkupCompile.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/AiCorb_MarkupCompile.lref" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/GeneratedInternalTypeHelper.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/GeneratedInternalTypeHelper.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AiCorbMainPage.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/AlertDialogView.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataFromImage.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataFromImage.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/CreateNewFacadeDataView.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/Dialog.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/Dialog.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialog.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialog.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/DuplicateDialogView.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.baml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/EditDialogView.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/GeneralDialogView.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/GeneralDialogView.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.baml" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/MyWindow.baml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/obj/Debug/Views/MyWindow.g.i.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AiCorb/packages.config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 001.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 002.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 003.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 004.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 005.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions Page 006.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/refactor-instructions.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/ribbon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/window1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/window2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/window3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/HelpLibraryManagerLauncher.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Install_Revit WPF Template Documentation.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Remove_Revit WPF Template Documentation.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.chm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.msha" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Revit WPF Template Documentation.mshc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/SearchHelp.aspx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/Web.Config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/WebKI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/WebTOC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/Help/search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/RefactorInstructions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/RevitTemplate.shfbproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/Autodesk.Revit.SDK.2022.0.2.392.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/Revit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/AdWindows.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIBrowserUtils.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIFoundation.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIIFC.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIIFC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPILink.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacros.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacros.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacrosInterop.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIMacrosInteropAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPISteel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUI.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUILink.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacros.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacros.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacrosInterop.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAPIUIMacrosInteropAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAddInUtility.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitAddInUtility.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitDB.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitDBAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitNET.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitUI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Autodesk.Revit.SDK.2022.0.2.392/ref/net48/RevitUIAPI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/MaterialDesignColors.3.0.0-ci484.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/images/MaterialDesignColors.Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net462/MaterialDesignColors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net462/MaterialDesignColors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net6.0/MaterialDesignColors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net6.0/MaterialDesignColors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net7.0/MaterialDesignColors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignColors.3.0.0-ci484/lib/net7.0/MaterialDesignColors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/MaterialDesignThemes.5.0.0-ci484.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/MaterialDesignThemes.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-MediumItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/Roboto-ThinItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/build/Resources/Roboto/RobotoCondensed-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/images/MaterialDesignThemes.Icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net462/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net6.0/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/lib/net7.0/MaterialDesignThemes.Wpf.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/MaterialDesignThemes.5.0.0-ci484/tools/VisualStudioToolsManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/Microsoft.Xaml.Behaviors.Wpf.1.1.39.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Design/Microsoft.Xaml.Behaviors.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net45/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Design/Microsoft.Xaml.Behaviors.DesignTools.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/net5.0-windows7.0/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Design/Microsoft.Xaml.Behaviors.DesignTools.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/lib/netcoreapp3.1/Microsoft.Xaml.Behaviors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Microsoft.Xaml.Behaviors.Wpf.1.1.39/tools/Install.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/.signature.p7s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/LICENSE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/Newtonsoft.Json.13.0.3.nupkg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net20/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net35/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net40/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net45/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/net6.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard1.3/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/lib/netstandard2.0/Newtonsoft.Json.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/Newtonsoft.Json.13.0.3/packageIcon.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Commands/AskEasyTasksCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/ChatCompletionGetElementsResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/ChatCompletionResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/ChatCompletionResponseFunction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/ChatFunctionRequest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/ElementSelectionProperties.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Data/FunctionManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/ExternalEventHandler/RevitEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/ExternalEventHandler/SendMessageEventHandler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/RevitFunctions/RevitFunctionManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Utils/OpenAIHelper.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Views/ChatFunctionView.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/Views/ChatFunctionView.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Bcl.AsyncInterfaces.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.Binder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Configuration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.DependencyInjection.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Http.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Logging.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Logging.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Options.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/Microsoft.Extensions.Primitives.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/OpenAI_API.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/OpenAI_API.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.ClientModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.ClientModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Memory.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Memory.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Text.Encodings.Web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Text.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/System.ValueTuple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatFunctionView.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatFunctionView.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatFunctionView.g.i.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatView.baml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatView.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/ChatView.g.i.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/Microsoft.Bcl.AsyncInterfaces.1.1.1.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/net461/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/net461/Microsoft.Bcl.AsyncInterfaces.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/ref/net461/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Bcl.AsyncInterfaces.1.1.1/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.2.1.0/Microsoft.Extensions.Configuration.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Abstractions.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Abstractions.2.1.0/Microsoft.Extensions.Configuration.Abstractions.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Binder.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Binder.2.1.0/Microsoft.Extensions.Configuration.Binder.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Binder.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Configuration.Binder.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0/Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.DependencyInjection.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Http.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Http.2.1.0/Microsoft.Extensions.Http.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Http.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Http.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Http.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Http.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.2.1.0/Microsoft.Extensions.Logging.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Logging.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.Abstractions.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.Abstractions.2.1.0/Microsoft.Extensions.Logging.Abstractions.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Logging.Abstractions.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Options.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Options.2.1.0/Microsoft.Extensions.Options.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Options.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Options.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Options.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Primitives.2.1.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Primitives.2.1.0/Microsoft.Extensions.Primitives.2.1.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Primitives.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Primitives.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/Microsoft.Extensions.Primitives.2.1.0/lib/netstandard2.0/Microsoft.Extensions.Primitives.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/System.Buffers.4.5.1.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/net461/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/netstandard1.1/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/netstandard2.0/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/lib/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/net45/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/netstandard1.1/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/netstandard2.0/System.Buffers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/ref/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Buffers.4.5.1/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/DotNetPackageIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/System.ClientModel.1.0.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/lib/net6.0/System.ClientModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/lib/net6.0/System.ClientModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/lib/netstandard2.0/System.ClientModel.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ClientModel.1.0.0/lib/netstandard2.0/System.ClientModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/System.Diagnostics.DiagnosticSource.6.0.1.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/buildTransitive/netcoreapp3.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net461/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net461/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net5.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net5.0/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net6.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/net6.0/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Diagnostics.DiagnosticSource.6.0.1/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/System.Memory.4.5.4.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/net461/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/net461/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/netstandard1.1/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/netstandard1.1/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/netstandard2.0/System.Memory.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/lib/netstandard2.0/System.Memory.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/ref/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.4.5.4/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/DotNetPackageIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/System.Memory.Data.1.0.2.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/lib/net461/System.Memory.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/lib/net461/System.Memory.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/lib/netstandard2.0/System.Memory.Data.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Memory.Data.1.0.2/lib/netstandard2.0/System.Memory.Data.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/System.Numerics.Vectors.4.5.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/net46/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/netstandard1.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/netstandard2.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/net45/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/net46/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/netstandard1.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/netstandard2.0/System.Numerics.Vectors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Numerics.Vectors.4.5.0/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/System.Runtime.CompilerServices.Unsafe.6.0.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/buildTransitive/netcoreapp3.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net461/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net461/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net6.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/net6.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Runtime.CompilerServices.Unsafe.6.0.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/System.Text.Encodings.Web.4.7.2.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/net461/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/net461/System.Text.Encodings.Web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard1.0/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard1.0/System.Text.Encodings.Web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard2.0/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard2.0/System.Text.Encodings.Web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard2.1/System.Text.Encodings.Web.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/lib/netstandard2.1/System.Text.Encodings.Web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Encodings.Web.4.7.2/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/Icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/System.Text.Json.4.7.2.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/net461/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/net461/System.Text.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/netcoreapp3.0/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/netcoreapp3.0/System.Text.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/netstandard2.0/System.Text.Json.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/lib/netstandard2.0/System.Text.Json.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Text.Json.4.7.2/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/System.Threading.Tasks.Extensions.4.5.4.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/net461/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/net461/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard1.0/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard1.0/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard2.0/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/netstandard2.0/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/portable-net45+win8+wp8+wpa81/System.Threading.Tasks.Extensions.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/netcoreapp2.1/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.Threading.Tasks.Extensions.4.5.4/version.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/.signature.p7s" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/LICENSE.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/System.ValueTuple.4.5.0.nupkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net461/System.ValueTuple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/net47/System.ValueTuple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard1.0/System.ValueTuple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/netstandard2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/lib/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/MonoAndroid10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/MonoTouch10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/net461/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/net47/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/netcoreapp2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/netstandard2.0/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/uap10.0.16299/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinios10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinmac20/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarintvos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/ref/xamarinwatchos10/_._" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/useSharedDesignerContext.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/System.ValueTuple.4.5.0/version.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GELHelper/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GELHelper/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/App.config" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/App.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/App.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/App.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/Commands/HelloWorldCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/Commands/HelloWorldCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/GELHelper.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/GELHelper.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/Views/MyWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/Views/ChatView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/Views/MyWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/Views/ChatView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.dll.config" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.dll.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/bin/Debug2022/GELHelper.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.dll" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.g.resources" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.g.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper_MarkupCompile.cache" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper_MarkupCompile.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper_MarkupCompile.lref" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/obj/Debug/GELHelper_MarkupCompile.lref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/MyWindow.baml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/obj/Debug/Views/MyWindow.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GELHelper/packages.config" beforeDir="false" afterPath="$PROJECT_DIR$/GELHelper/packages.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,10 +367,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/dfbbd232ee2d407d9a091311aec7200c1d000/84/43dc917e/IChatEndpoint.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2dAicID1VGT1Nc7DuO7Z8KEH6ut" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -281,29 +382,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Executable.Revit2024.executor": "Debug",
-    ".NET Executable.Unnamed.executor": "Debug",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Executable.Revit2024.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Executable.Unnamed.executor&quot;: &quot;Debug&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\ykish\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\ykish\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\ykish\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Revit2024" type="RunExe" factoryName=".NET Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../../../Program Files/Autodesk/Revit 2024/Revit.exe" />
@@ -326,7 +428,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1709457362568</updated>
-      <workItem from="1709457385030" duration="562000" />
+      <workItem from="1709457385030" duration="11227000" />
+      <workItem from="1709529170888" duration="30163000" />
     </task>
     <servers />
   </component>

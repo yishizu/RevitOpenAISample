@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows;
 using GELHelper.Utils;
 using GELHelper.Views;
 using Autodesk.Revit.DB;
@@ -18,9 +19,11 @@ namespace GELHelper.Commands
         {
             using (var loader = new AssemblyLoader())
             {
+                
                 var uiApp = commandData.Application;
                 var uiDoc = uiApp.ActiveUIDocument;
-                var test = new MyWindow();
+                
+                var test = new ChatView();
                 //TaskDialog.Show("GELHelper", "Hello World!");
                 test.Show();
             };

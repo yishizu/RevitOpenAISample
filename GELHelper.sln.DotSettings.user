@@ -7,6 +7,7 @@
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/InvokeBeforeBuildAndAfterBuildTargetsForSkippedProjects/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/InvokePreAndPostBuildEventTargetsForSkippedProjects/@EntryValue">True</s:Boolean>
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/SolutionBuilderNext/OutputVerbosityLevel/@EntryValue">Normal</s:String>
+	<s:String x:Key="/Default/Environment/InlayHints/CSharpTypeConversionHintsOptions/ExclusionList/=0d9fd723_002D58ce_002D4600_002D83b9_002D781ac0523b89/@EntryIndexedValue">OpenAI_API.APIAuthentication(System.String)</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=AiCorb_002Fresources/@EntryIndexedValue">True</s:Boolean>
 	
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>
